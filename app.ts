@@ -38,6 +38,7 @@ async function getPlayers ():Promise<Player[] | void> {
 
     });
     const players:Player[] = await res.json()
+    DIV_TABLE.innerHTML = ""
     for (const player of players) {
         popleiRow(player)
         
@@ -62,30 +63,36 @@ catch (err)
          console.log(player[key]);
          divcell.textContent = player[key] 
          divrow.appendChild(divcell) 
+         console.log(divcell.textContent);
+         
     }
-    DIV_TABLE.appendChild(divrow)
     const divbutton  = document.createElement("div")
-    divrow.className = "divButton"
+    divbutton.className = "divButton"
     const button:HTMLButtonElement = document.createElement("button")
     button.className = "button"
     button.textContent= `Add ${player.playerName} to current Team`
-    divrow.addEventListener("click", (e) => 
-    {createAppendFunc(player)
-    })
-    divrow.appendChild(divbutton) 
+    button.addEventListener("click", (e) => 
+        {createAppendFunc(player)
+        })
+        divbutton.appendChild(button)
+        divrow.appendChild(divbutton) 
+        DIV_TABLE.appendChild(divrow)
   }
 
 
   function createAppendFunc(player:Player | any)
   {
+    console.log(player);
+    
     const plaierElms:NodeListOf<HTMLElement> =  document.querySelectorAll(`.${player.position}>*`)
+player.kais = ["playerName", "position", "points", "twoPercent", "threePercent",]
+    let i = 0
     for (const element of plaierElms) {
-        element.textContent += player.element.className
-    }
+        element.textContent += player.kais[i++]
 
     
-
   }
+}
 
   //SEARCH_BUTTON_ELM.onclick(getPlayers)
   SEARCH_BUTTON_ELM.addEventListener("click", e => getPlayers())

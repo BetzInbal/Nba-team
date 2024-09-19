@@ -36,7 +36,7 @@ playerPosition{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 12vw;
+    /* gap: 12vw; */
 }
 .player
 {
@@ -65,9 +65,15 @@ playerPosition{
     background-color: #f0f0f0;
 }
 .row{
+    height: 50px;
     width: 55vw;
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    /* background-color: #f0f0f0; */
+    justify-content: space-between;
+    background-color: #434277;
+}
+.cell{
+    border: 1px;
+    border-color: aqua;
+    height: 49px;
 }
