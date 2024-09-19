@@ -14,39 +14,39 @@
      </div>
      <div class="thteam">
         <div class="player PG">
-            <p class="playerPosition">Point Guard</p>
-            <h5 class="playerNmae"></h5>
-            <p class="playerTwoPercent"></p>
-            <p class="playerThreePercent"></p>
-            <p class="playerPoints"></p>
+            <p class="position">Point Guard</p>
+            <h5 class="playerNmae"> </h5>
+            <p class="twoPercent">two Percent</p>
+            <p class="threePercent">three Percent</p>
+            <p class="points">points</p>
         </div>
         <div class="player SG">
-            <p class="playerPosition">Shooting Guard</p>
+            <p class="player position">Shooting Guard</p>
             <h5 class="playerNmae"></h5>
-            <p class="playerTwoPercent"></p>
-            <p class="playerThreePercent"></p>
-            <p class="playerPoints"></p>
+            <p class="player twoPercent"></p>
+            <p class="player threePercent"></p>
+            <p class="player points"></p>
         </div>
         <div class="player SF">
-            <p class="playerPosition">Small Forward</p>
+            <p class="player position">Small Forward</p>
             <h5 class="playerNmae"></h5>
-            <p class="playerTwoPercent"></p>
-            <p class="playerThreePercent"></p>
-            <p class="playerPoints"></p>
+            <p class="player twoPercent"></p>
+            <p class="player threePercent"></p>
+            <p class="player points"></p>
         </div>
         <div class="player PF">
-            <p class="playerPosition">Power Forward</p>
+            <p class="player position">Power Forward</p>
             <h5 class="playerNmae"></h5>
-            <p class="playerTwoPercent"></p>
-            <p class="playerThreePercent"></p>
-            <p class="playerPoints"></p>
+            <p class="player twoPercent"></p>
+            <p class="player threePercent"></p>
+            <p class="player points"></p>
         </div>
         <div class="player C">
-            <p class="playerPosition">Center </p>
+            <p class="player position">Center </p>
             <h5 class="playerNmae"></h5>
-            <p class="playerTwoPercent"></p>
-            <p class="playerThreePercent"></p>
-            <p class="playerPoints"></p>
+            <p class="player twoPercent"></p>
+            <p class="player threePercent"></p>
+            <p class="player points"></p>
         </div>
      </div>
      <div class="search">
@@ -58,15 +58,24 @@
             <option value="C">C</option>
         </select>
         <label>
-            <input type="range" id="twoPercentRange" min="1" max="100" value="25">
+            <input type="range" id="twoPercentRange" min="1" max="100" value="25" step="1">
         </label><label>
             <input type="range" id="ThreePercentRange" min="1" max="100" value="25">
         </label><label>
             <input type="range" id="pointRange" min="1" max="20000" value="10000">
         </label>
+        <input type="button" value="search player"
+        class="searchplayer">
      </div>     
      <div class="divtable">
-        <div class="header"></div>
+        <div class="header row">
+            <div class="head">Player</div>
+            <div class="head">position</div>
+            <div class="head">points</div>
+            <div class="head">FG%</div>
+            <div class="head">3P%</div>
+            <div class="head">Action</div>
+        </div>
      </div>
 
 </body>
