@@ -1,0 +1,52 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+header{
+    height: 5vh;
+    width: 100vw;
+    background-color: #17408b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.tytel{
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #17408b;
+}
+playerPosition{
+    color: #17408b;
+}
+.thteam{
+    width: 90vw;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12vw;
+}
+.player
+{
+    height: 22vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+}
